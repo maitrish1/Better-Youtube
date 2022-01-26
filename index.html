@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/48c806174c.js" crossorigin="anonymous"></script>
+    <title>Better YouTube</title>
+</head>
+<body>
+    
+
+   <div class="nav">
+    <li id="yt" style="cursor: pointer;" onclick="location.reload()">
+        <img src="./images/youtube.png" style="height: 3em; width: 3em;" alt="">
+        <h1  >Better YouTube</h1>
+    </li>
+    <li id='search-bar'>
+        <form method="post">
+            <input type="search" id='search-query' placeholder="Search">
+            <button type="submit" id='submit-btn'><i class="fas fa-search"></i></button>
+        </form>
+    </li>
+   </div>
+   
+   <div class="data-body">
+        <div class="sidebar">
+            <li onclick="location.reload()">
+                <img src="./images/homepage.png" class="icons" alt="">
+                <h3>Home</h3>
+            </li>
+            <li>
+                <img src="./images/compass-with-white-needles.png" class="icons" alt="">
+                <h3>Explore</h3>
+            </li>
+            <li>
+                <img src="./images/subscribe.png" class="icons" alt="">
+                <h3>Subscriptions</h3>
+            </li>
+            <li>
+                <img src="./images/video-library.png" class="icons" alt="">
+                <h3>Library</h3>
+            </li>
+            <li>
+                <img src="./images/history.png" class="icons" alt="">
+                <h3>History</h3>
+            </li>
+            <li>
+                <img src="./images/play-button.png"  class="icons" alt="">
+                <h3>Your Videos</h3>
+            </li>
+            <li>
+                <img src="./images/clock.png"  class="icons" alt="">
+                <h3>Watch Later</h3>
+            </li>
+        </div>
+        <div class="show-data"></div>
+   </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

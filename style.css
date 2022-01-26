@@ -1,0 +1,148 @@
+*{
+    margin: 0;padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    list-style-type: none;
+}
+.data-body{
+    display: flex;
+    width: 100%vw;
+    position: relative;
+    z-index: 9;
+}
+.show-data{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-evenly;
+    gap:1.5em;
+    height: 100%;
+    position:absolute;
+    right: 0;
+    top: 10vh;
+    
+}
+.sidebar{
+    width: 20%;
+    background-color: blueviolet;
+    height: 90vh;
+    overflow: scroll;
+    position: fixed;
+    left: 0;
+    top: 10vh;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+.card a{
+    width: 320px;
+    height: 320px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    text-decoration: none;
+    color: gray;
+    
+}
+
+
+.nav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: blueviolet;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 10;
+}
+
+#yt{
+    display: flex;
+    align-items: center;
+    gap:1.2em;
+}
+#search-bar form{
+    position: relative;
+    display: flex;
+   align-items: center;
+   width: 30vw;
+   height: 2.6em;
+}
+#search-query{
+    width: 100%;
+   height: 100%;
+    border: none;
+    border-radius: 25px;
+}
+#search-query:focus{
+    outline: none;
+}
+#search-query::placeholder{
+    font-size: 1.1em;
+    color: black;
+}
+#submit-btn{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    right: 1em;
+}
+.icons{
+    height: 1.6em;
+    width: 1.6em;
+}
+.sidebar li{
+    display: flex;
+    gap: 1em;
+    cursor: pointer;
+    height: 3em;
+    align-items: center;
+    justify-content: start;
+    padding-left: 1.2em;
+}
+.sidebar li:hover{
+    background-color: rgb(119, 33, 199);
+}
+.sidebar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .sidebar {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+  }
+
+  @media screen and (max-width:1000px){
+      .sidebar{
+          display: none;
+      }
+      .show-data{
+          left: 15vh;
+          gap: 4em;
+      }
+  }
+  @media screen and (max-width:879px){
+    
+    .show-data{
+        left: 12vh;
+        gap: 1em;
+    }
+}
+@media screen and (max-width:817px){
+    
+    .show-data{
+        left: 8vh;
+        gap:1em
+    }
+   
+}
+@media screen and (max-width:450px){
+    
+    .show-data{
+        left: 5vh;
+        gap:1em
+    }
+   
+}
